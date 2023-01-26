@@ -1,0 +1,32 @@
+builds:
+  - binary: chgmd5
+    goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
+    flags:
+      - -mod=vendor
+
+release:
+  prerelease: auto
+
+universal_binaries:
+  - replace: true
+
+brews:
+  - name: chgmd5
+    homepage: https://github.com/dinglevin/chgmd5
+    tap:
+      owner: dinglevin
+      name: homebrew-dinglevin
+    commit_author:
+      name: dinglevin
+      email: dingweiqiong@gmail.com
+
+checksum:
+  name_template: 'checksum.txt'
