@@ -21,7 +21,8 @@ var rootCmd = &cobra.Command{
 			return
 		}
 
-		fmt.Println("Hello world!", appendStr)
+		chgmd5(args, appendStr)
+		return
 	},
 }
 
@@ -35,3 +36,4 @@ func Execute() {
 func init() {
 	rootCmd.Flags().StringP("append", "a", "@@LEVIN@@", "Append string to the file")
 }
+
