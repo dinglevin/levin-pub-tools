@@ -12,8 +12,6 @@ builds:
       - arm64
     env:
       - CGO_ENABLED=0
-    flags:
-      - -mod=readonly
 
   - main: appendstr/main.go
     id: appendstr
@@ -27,8 +25,6 @@ builds:
       - arm64
     env:
       - CGO_ENABLED=0
-    flags:
-      - -mod=readonly
 
 release:
   prerelease: auto
