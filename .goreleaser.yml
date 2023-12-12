@@ -1,5 +1,8 @@
+project_name: levin-pub-tools
 builds:
-  - binary: chgmd5
+  - main: getlastn/main.go
+    id: getlastn
+    binary: getlastn
     goos:
       - darwin
       - linux
@@ -10,23 +13,34 @@ builds:
     env:
       - CGO_ENABLED=0
     flags:
-      - -mod=mod
+      - -mod=readonly
+
+  - main: appendstr/main.go
+    id: appendstr
+    binary: appendstr
+    goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
+    flags:
+      - -mod=readonly
 
 release:
   prerelease: auto
 
 universal_binaries:
   - replace: true
+  - id: appendstr
+    name_template: appendstr
+  - id: getlastn
+    name_template: getlastn
 
 brews:
-  - name: chgmd5
-    homepage: https://github.com/dinglevin/levin-pub-tools/appendstr
-    tap:
-      owner: dinglevin
-      name: homebrew-dinglevin
-    commit_author:
-      name: dinglevin
-      email: dinglevin@foxmail.com
   - name: getlastn
     homepage: https://github.com/dinglevin/levin-pub-tools/getlastn
     tap:
