@@ -20,13 +20,21 @@ universal_binaries:
 
 brews:
   - name: chgmd5
-    homepage: https://github.com/dinglevin/chgmd5
+    homepage: https://github.com/dinglevin/levin-pub-tools/appendstr
     tap:
       owner: dinglevin
       name: homebrew-dinglevin
     commit_author:
       name: dinglevin
-      email: dingweiqiong@gmail.com
+      email: dinglevin@foxmail.com
+  - name: getlastn
+    homepage: https://github.com/dinglevin/levin-pub-tools/getlastn
+    tap:
+      owner: dinglevin
+      name: homebrew-dinglevin
+    commit_author:
+      name: dinglevin
+      email: dinglevin@foxmail.com
 
 checksum:
   name_template: 'checksum.txt'

@@ -1,4 +1,4 @@
-module github.com/dinglevin/chgmd5
+module github.com/dinglevin/levin-pub-tools/appendstr
 
 go 1.19
 

@@ -11,17 +11,17 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "chgmd5",
-	Short: "A small tool to change a file's MD5 hash",
-	Long:  `A small tool to change a file's MD5 hash`,
+	Use:   "appendstr",
+	Short: "A small tool to append strings to a file, so it can change its MD5 hash",
+	Long:  `A small tool to append strings to a file, so it can change its MD5 hash`,
 	Run: func(cmd *cobra.Command, args []string) {
-		appendStr, err := cmd.Flags().GetString("append")
+		appendContent, err := cmd.Flags().GetString("append")
 		if err != nil {
 			fmt.Println("Invalid append flags: ", err)
 			return
 		}
 
-		chgmd5(args, appendStr)
+		AppendStrTo(args, appendContent)
 		return
 	},
 }
