@@ -37,6 +37,14 @@ universal_binaries:
     name_template: getlastn
 
 brews:
+  - name: appendstr
+    homepage: https://github.com/dinglevin/levin-pub-tools/appendstr
+    tap:
+      owner: dinglevin
+      name: homebrew-dinglevin
+    commit_author:
+      name: dinglevin
+      email: dinglevin@foxmail.com
   - name: getlastn
     homepage: https://github.com/dinglevin/levin-pub-tools/getlastn
     tap:
