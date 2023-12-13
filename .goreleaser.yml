@@ -39,7 +39,7 @@ universal_binaries:
 brews:
   - name: levin-pub-tools
     homepage: https://github.com/dinglevin/levin-pub-tools
-    tap:
+    repository:
       owner: dinglevin
       name: homebrew-dinglevin
     commit_author:
