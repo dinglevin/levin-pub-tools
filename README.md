@@ -1,2 +1,7 @@
-# chgmd5
-Ocationally, we have to change a files md5 to make things work, so this tool is made to do the job. The initial way is just to append some random string to a file, but welcome to provide more thoughts on it.
+# 概述
+自己开发公用工具集合
+
+## 安装
+> brew tap dinglevin/dinglevin
+> brew install levin-pub-tools
+
