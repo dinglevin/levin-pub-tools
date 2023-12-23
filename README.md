@@ -2,8 +2,7 @@
 自己开发公用工具集合
 
 ## 安装
-> brew tap dinglevin/pub-tools
-> 
+> brew tap dinglevin/pub-tools 
 > brew install levin-pub-tools
 
 ## 使用
